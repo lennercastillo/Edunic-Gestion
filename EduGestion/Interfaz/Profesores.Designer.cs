@@ -1,0 +1,169 @@
+﻿namespace EduGestion
+{
+    partial class Profesores
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.label1 = new System.Windows.Forms.Label();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.btnEliminar = new FontAwesome.Sharp.IconButton();
+            this.btnAgregar = new FontAwesome.Sharp.IconButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnEditar = new FontAwesome.Sharp.IconButton();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label1.Location = new System.Drawing.Point(214, 60);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(342, 29);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Administracion de profesores";
+            // 
+            // iconButton3
+            // 
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Ban;
+            this.iconButton3.IconColor = System.Drawing.Color.Black;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton3.IconSize = 34;
+            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.Location = new System.Drawing.Point(545, 125);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Size = new System.Drawing.Size(117, 44);
+            this.iconButton3.TabIndex = 20;
+            this.iconButton3.Text = "CANCELAR";
+            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton3.UseVisualStyleBackColor = true;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.IconChar = FontAwesome.Sharp.IconChar.X;
+            this.btnEliminar.IconColor = System.Drawing.Color.Black;
+            this.btnEliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEliminar.IconSize = 34;
+            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminar.Location = new System.Drawing.Point(411, 125);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(117, 44);
+            this.btnEliminar.TabIndex = 19;
+            this.btnEliminar.Text = "ELIMINAR";
+            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.btnAgregar.IconColor = System.Drawing.Color.Black;
+            this.btnAgregar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAgregar.IconSize = 38;
+            this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregar.Location = new System.Drawing.Point(139, 125);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(121, 44);
+            this.btnAgregar.TabIndex = 18;
+            this.btnAgregar.Text = "AGREGAR";
+            this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // dataGridView1
+            // 
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.Location = new System.Drawing.Point(139, 175);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(523, 214);
+            this.dataGridView1.TabIndex = 17;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.IconChar = FontAwesome.Sharp.IconChar.Pencil;
+            this.btnEditar.IconColor = System.Drawing.Color.Black;
+            this.btnEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEditar.IconSize = 34;
+            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditar.Location = new System.Drawing.Point(288, 125);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(117, 44);
+            this.btnEditar.TabIndex = 27;
+            this.btnEditar.Text = "ACTUALIZAR";
+            this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // Profesores
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.iconButton3);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label1);
+            this.Name = "Profesores";
+            this.Text = "Profesores";
+            this.Load += new System.EventHandler(this.Profesores_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label label1;
+        private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton btnEliminar;
+        private FontAwesome.Sharp.IconButton btnAgregar;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private FontAwesome.Sharp.IconButton btnEditar;
+    }
+}

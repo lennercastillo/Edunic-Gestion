@@ -5,37 +5,13 @@ using Microsoft.Data.SqlClient;
 
 namespace Capa_Dato
 {
-    public class CD_Conexion
+    public class ConexionDB
     {
+        private string cadenaConexion = "Data Source=LAPTOP\\MSSQLSERVER01;Initial Catalog=DB_ACADEMYGESTION;Integrated Security=True;Trust Server Certificate=True";
 
-        private string connection = "";
-
-        public SqlConnection Abrir_conexion() 
+        public SqlConnection ObtenerConexion()
         {
-
-            var conexion = new SqlConnection(connection);
-            if (conexion.State == System.Data.ConnectionState.Closed) 
-            {
-                conexion.Open();
-            }
-
-            return conexion;
-
-
-        
-        
-        }
-
-        public SqlConnection Cerrar_conexion()
-        {
-            var conexion = new SqlConnection(connection);
-            if (conexion.State == System.Data.ConnectionState.Open)
-            {
-                conexion.Close();
-            }
-
-            return conexion;
-
+            return new SqlConnection(cadenaConexion);
         }
     }
 }

@@ -16,7 +16,16 @@ namespace EduGestion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Principal());
+
+            // Show login first. If successful, open main form.
+            using (var login = new Login())
+            {
+                var result = login.ShowDialog();
+                if (result == System.Windows.Forms.DialogResult.OK)
+                {
+                    Application.Run(new Principal());
+                }
+            }
         }
     }
 }
